@@ -13,25 +13,25 @@ const tableBody = document.getElementById('table-body');
 //})
 
 function addExpense(e) {
-    var newRow = document.createElement('tr');
+    const newRow = document.createElement('tr');
 
-    var newType = document.createElement('td');
+    const newType = document.createElement('td');
     newType.classList.add('td');
     newType.innerText = type.value;
 
-    var newDate = document.createElement('td');
+    const newDate = document.createElement('td');
     newDate.classList.add('td');
     newDate.innerText = date.value;
 
-    var newDescription = document.createElement('td');
+    const newDescription = document.createElement('td');
     newDescription.classList.add('td');
     newDescription.innerText = description.value;
 
-    var newLocale = document.createElement('td');
+    const newLocale = document.createElement('td');
     newLocale.classList.add('td');
     newLocale.innerText = locale.value;
 
-    var newAmount = document.createElement('td');
+    const newAmount = document.createElement('td');
     newAmount.classList.add('td');
     newAmount.innerText = amount.value;
 
