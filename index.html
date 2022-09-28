@@ -23,16 +23,17 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/home.html">Home</a>
+                        <a class="nav-link active" aria-current="page"
+                            href="https://fathippiesolutions.dev/home.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/projects/Projects.html">Projects</a>
+                        <a class="nav-link" href="https://fathippiesolutions.dev/projects/Projects.html">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/about/About.html">About</a>
+                        <a class="nav-link" href="https://fathippiesolutions.dev/about/About.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/contact/Contact.html">Contact</a>
+                        <a class="nav-link" href="https://fathippiesolutions.dev/contact/Contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -47,16 +48,15 @@
             <div class="row">
                 <form action="" class="col-1-3">
                     <div>
-                        <label for="type" class="col-2">Type:</label><br>
-                        <script src="https://kit.fontawesome.com/4fb00e0767.js" crossorigin="anonymous"></script>
-                        <select name="type" class="fa" id="type">
+                        <label for="type" class="col-2">Type:</label>
+                        <select name="type" class="" id="type">
                             <option value="card">Card</option>
                             <option value="cash">Cash is King</option>
                             <option value="bitcoin">BitCoin</option>
                             <option value="other">Other</option>
                         </select>
                         <br>
-                        <label for="date" class="col-2">Date:</label><br>
+                        <label for="date" class="col-2">Date:</label>
                         <input type="date" name="date" id="date">
                         <br>
                         <label for="description" class="col-2">Description:</label>
@@ -70,7 +70,7 @@
                 </form>
                 <div class="col-2-3">
                     <table class="container">
-                        <tbody>
+                        <thead>
                             <tr>
                                 <th col-2>Type</th>
                                 <th col-2>Date</th>
@@ -79,19 +79,14 @@
                                 <th col-2>Amount</th>
                                 <th col-2>Delete</th>
                             </tr>
-                            <tr>
-                                <td>typeStuff</td>
-                                <td>typeStuff</td>
-                                <td>typeStuff</td>
-                                <td>typeStuff</td>
-                                <td>typeStuff</td>
-
-                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+                        </tbody>
                 </div>
 
                 <div>
                 </div>
-                </tbody>
+
                 </table>
             </div>
         </div>

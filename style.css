@@ -43,6 +43,12 @@ tr {
 }
 
 select {
-    font-family: 'FontAwesome', 'sans-serif';
+    width: 100%;
+    border-radius: 10px;
+}
 
+input {
+    width: 100%;
+    border-radius: 10px;
+    border-style: none;
 }
