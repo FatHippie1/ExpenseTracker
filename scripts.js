@@ -35,7 +35,26 @@ function addExpense(e) {
     newAmount.classList.add('td');
     newAmount.innerText = amount.value;
 
-    //var deleteButton = document.createElement('<td><button id="delete" type="button"><i class="fa-solid fa-trash" onclick="deleteExpense(event)"></i></button></td>');
+    const newDeleteButton = document.createElement('button');
+    newDeleteButton.setAttribute = ('id', 'delete');
+    newDeleteButton.setAttribute = ('onClick', 'deleteExpense(event');
+    newDeleteButton.classList.add('td');
+    //newDeleteButton.setAttribute = ('type', 'button');
+    newDeleteButton.innerText = 'Delete';
+
+    //newDeleteButtonTD.setAttribute('id', 'delete');
+    //newDeleteButtonTD.setAttribute('type', 'button');
+    //newDeleteButtonTD.innerText = `<i class="fa-solid fa-trash" onclick="deleteExpense(event)"></i>`;
+
+    //const newDeleteButtonButton = document.createElement('button');
+    //newDeleteButtonButton.classList.add('td');
+    //newDeleteButtonButton.setAttribute('type', 'button');
+
+    //const deleteIcon = document.getElementById('delete');
+
+    //    const
+
+    //  < button id="delete" type="button" > <i class="fa-solid fa-trash" onclick="deleteExpense(event)"></i></button ></td > ');
     //deleteButton.classList.add('')
 
     newRow.appendChild(newType);
@@ -52,11 +71,28 @@ function addExpense(e) {
 
     newRow.appendChild(newLocale);
     tableBody.appendChild(newRow);
-    description.value = '';
+    locale.value = '';
 
     newRow.appendChild(newAmount);
     tableBody.appendChild(newRow);
     amount.value = '';
+
+    newRow.appendChild(newDeleteButton)
+    tableBody.appendChild(newRow);
+
+    //newDeleteButton.setAttribute = ('onClick', 'deleteExpense(event');
+    //newDeleteButtonButton
+
+    //newRow.appendChild(newDeleteButtonButton)
+    //tableBody.appendChild(newRow);
+    //newDeleteButtonButton
+
+    //newRow.nextSibling(deleteButtonTD);
+    //tableBody.appendChild(newRow);
+    //deleteIcon.innerText = '<i class="fa-solid fa-trash" onclick="deleteExpense(event)"></i>';
+    //tableBody.nextSibling = '<i class="fa-solid fa-trash" onclick="deleteExpense(event)"></i>';
+
+
     /*
 expenseItem.innerHTML += `
 <td>${type.value}</td>
