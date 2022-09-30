@@ -66,9 +66,6 @@ function addExpense(e) {
     newRow.appendChild(newIconTD);
     tableBody.appendChild(newRow);
 
-    //newRow.appendChild(newButtonIcon)
-    //tableBody.appendChild(newRow);
-
     console.log('Expense Added!');
 }
 
