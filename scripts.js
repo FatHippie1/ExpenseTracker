@@ -30,11 +30,17 @@ function addExpense(e) {
     newAmount.classList.add('td');
     newAmount.innerText = amount.value;
 
+    const newIconTD = document.createElement('td');
+    newIconTD.classList.add('td');
+    newIconTD.setAttribute('id', 'iconTD');
+
     const newButtonIcon = document.createElement('i');
     newButtonIcon.classList.add('fa-solid');
     newButtonIcon.classList.add('fa-trash');
     newButtonIcon.setAttribute('onclick', 'deleteExpense(event)');
     newButtonIcon.setAttribute('type', 'button');
+    newButtonIcon.setAttribute('id', 'deleteIcon');
+    newIconTD.appendChild(newButtonIcon);
 
 
     newRow.appendChild(newType);
@@ -57,17 +63,21 @@ function addExpense(e) {
     tableBody.appendChild(newRow);
     amount.value = '';
 
-    newRow.appendChild(newButtonIcon)
+    newRow.appendChild(newIconTD);
     tableBody.appendChild(newRow);
+
+    //newRow.appendChild(newButtonIcon)
+    //tableBody.appendChild(newRow);
 
     console.log('Expense Added!');
 }
 
 function deleteExpense(e) {
     const target = e.target;
-    const parentTDRow = target.parentElement;
+    const parentTD = target.parentElement;
+    const parentTR = parentTD.parentElement;
 
-    parentTDRow.remove();
+    parentTR.remove();
     console.log('Expense Deleted!');
 }
 

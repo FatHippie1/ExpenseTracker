@@ -23,6 +23,15 @@
     border: none;
 }
 
+#iconTD.td {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50%;
+    padding-bottom: 50%;
+}
+
+
 body {
     background-image: linear-gradient(90deg, grey, black);
     color: white;
